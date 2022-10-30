@@ -19,19 +19,24 @@
         <form action="" class="form">
           <h2>Login</h2>
           <div class="input-group">
-            <input type="text" name="loginUser" id="loginUser" />
+            <input type="text" name="loginUser" id="loginUser" required />
             <label for="loginUser">User Name</label>
           </div>
           <div class="input-group">
-            <input type="password" name="loginPassword" id="loginPassword" />
+            <input
+              type="password"
+              name="loginPassword"
+              id="loginPassword"
+              required
+            />
             <label for="loginPassword">Password</label>
           </div>
-          <button type="submit" class="submit-btn">Login</button>
+          <button type="submit" class="submit-btn" onClick="myFunction()">
+            Login
+          </button>
           <br />
           <br />
-          <a href="./register.html" class="registerLink"
-            >New User? Create Account</a
-          >
+          <a href="./register.html" class="registerLink">Create Account</a>
         </form>
       </div>
     </center>
